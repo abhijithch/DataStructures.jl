@@ -7,7 +7,7 @@ end
 """
     Queue(T[, blksize::Integer=1024])
 
-Create a `Queue` objet containing elements of type `T`.
+Create a `Queue` object containing elements of type `T`.
 """
 Queue{T}(ty::Type{T}) = Queue(Deque{T}())
 Queue{T}(ty::Type{T}, blksize::Integer) = Queue(Deque{T}(blksize))
